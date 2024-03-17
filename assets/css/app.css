@@ -49,6 +49,12 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+    /* background: var(--bg-color); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,6 +66,12 @@ header {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+header.sticky {
+    background: var(--bg-color);
+    border: 1px solid var(--secon-bg-color);
+    padding: 12px 10%;
 }
 
 span {
@@ -87,6 +99,9 @@ span {
     0 0 100px rgba(18,247,255,0.6);
 }
 
+.navlist a.active {
+    color: var(--hover-color);
+}
 #menu-icon {
     font-size: 1.8rem;
     z-index: 10001;
@@ -101,7 +116,7 @@ span {
 /* ======section========= */
 
 section {
-    padding: 65px 10%;
+    padding: 85px 10%;
 }
 
 .home {
