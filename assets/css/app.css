@@ -28,6 +28,20 @@
     0 0 150px rgba(18,247,255,0.3);
 }
 
+::-webkit-scrollbar {
+    height: 0;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secon-bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hover-color);
+    border-radius: 5rem;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-color);
@@ -175,7 +189,7 @@ section {
     height: 45px;
 }
 
-.btn-box a.btn {
+.btn-box .btn {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -184,20 +198,22 @@ section {
     background: var(--hover-color);
     color: var(--bg-color);
     font-size: 1rem;
+    letter-spacing: 1px;
     font-weight: 600;
     transition: .6s;
     box-shadow: var(--neon-box-shadow);
     border-radius: 5px;
-    position: relative;overflow: hidden;
+    position: relative;
+    overflow: hidden;
     z-index: 1;
     border: 2px solid var(--hover-color);
 }
 
-a.btn:hover {
+.btn:hover {
     color: var(--hover-color);
 }
 
-a.btn::before {
+.btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -209,20 +225,20 @@ a.btn::before {
     transition: .4s;
 }
 
-a.btn:hover::before {
+.btn:hover::before {
     width: 100%;
 }
 
-a.btn:nth-child(2) {
+.btn:nth-child(2) {
     background: var(--bg-color);
     color: var(--hover-color);
 }
 
-a.btn:nth-child(2):hover {
+.btn:nth-child(2):hover {
     color: var(--bg-color);
 }
 
-a.btn:nth-child(2)::before {
+.btn:nth-child(2)::before {
     background: var(--hover-color);
 }
 
@@ -695,16 +711,72 @@ a.btn:nth-child(2)::before {
 }
 
 
+/* ====================== contact section css ============================ */
 
+.contact {
+    background: var(--secon-bg-color);
+    width: 100%;
+}
 
+.contact form {
+    text-align: center;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
 
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    color: var(--text-color);
+    background: var(--bg-color);
+    margin-bottom: .8rem;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+}
 
+.contact form textarea {
+    resize: none;
+}
 
+.formBtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
+.formBtn .btn {
+    cursor: pointer;
+    font-size: 1rem;
+}
 
+/* =========================== footer css =============================== */
 
+footer {
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+footer p {
+    color: #bdbdbd;
+}
 
+footer a {
+    display: inline-flex;
+    justify-content: center;
+    color: var(--text-color);
+    background: var(--hover-color);
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+footer a i {
+    font-size: 1rem;
+    color: var(--secon-bg-color);
+}
 
 
 

@@ -59,3 +59,6 @@ circles.forEach(elem=>{
 
 // ============= mix it up PORTFOLIO SECTION
 var mixer = mixitup('.container');
+
+
+// active menue
