@@ -873,3 +873,42 @@ footer a i {
         box-shadow: var(--neon-box-shadow);
     }
 }
+
+/* ============ Break Points ================== */
+@media(max-wdth:991px) {
+    header,
+    header.sticky {
+        padding: 15px 5%;
+    }
+
+    footer {
+        padding: 15px 5%;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .navlist a {
+        padding: 8px 15px;
+    }
+
+    :root {
+        --big-font: 2.2rem;
+        --normal-font: 1.8rem;
+        --neon-box-shadow: 0 0 .8rem #12f7ff;
+        --h2-font: 3rem;
+    }
+}
+
+@media(max-wdth:768px) {
+    #menu-icon{
+        display: block;
+        transition: all .4s ease;
+    }
+    .navlist{
+        display: flex;
+        position: absolute;
+        
+    }
+}
