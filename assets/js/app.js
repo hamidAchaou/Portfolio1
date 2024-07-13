@@ -97,21 +97,39 @@ window.onscroll = () =>{
 }
 
 // ========== paralox ===================================
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry)=> {
-        if(entry.isIntersecting) {
-            entry.target.classList.add("show-items")
-        } else {
-            entry.target.classList.remove("show-items")
-        }
-    })
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry)=> {
+//         if(entry.isIntersecting) {
+//             entry.target.classList.add("show-items")
+//         } else {
+//             entry.target.classList.remove("show-items")
+//         }
+//     })
+// });
+
+// const scrollScale = document.querySelectorAll(".scroll-scale");
+// scrollScale.forEach((el)=> observer.observe(el));
+
+// const scrollBottom = document.querySelectorAll(".scroll-bottom");
+// scrollBottom.forEach((el)=> observer.observe(el));
+
+// const scrollTop = document.querySelectorAll(".scroll-top");
+// scrollTop.forEach((el)=> observer.observe(el));
+
+// scrollreveal
+// ScrollReveal animations
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
 });
 
-const scrollScale = document.querySelectorAll(".scroll-scale");
-scrollScale.forEach((ele)=> observer.observe(el));
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-const scrollBottom = document.querySelectorAll(".scroll-bottom");
-scrollBottom.forEach((ele)=> observer.observe(el));
-
-const scrollTop = document.querySelectorAll(".scroll-top");
-scrollTop.forEach((ele)=> observer.observe(el));
+ScrollReveal().reveal('.skill-left, .skill-right', { origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.service-box', { origin: 'bottom', interval: 200 });
+ScrollReveal().reveal('.port-box', { origin: 'bottom', interval: 200 });
