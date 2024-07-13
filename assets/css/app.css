@@ -310,8 +310,19 @@ section {
 
 .img-box img {
   width: 100%;
-  max-width: 450px;
+  max-width: 480px;
   height: auto;
+  
+  margin-left: 3%;
+  border: 2px solid var(--hover-color); 
+  background: var(--bg-color); 
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  color: var(--hover-color);
+  box-shadow: var(--neon-box-shadow); 
+  outline: 3px solid var(--bg-color);
 }
 
 .liquid-shape {
@@ -411,12 +422,11 @@ section {
 }
 
 /* =========================== Service section css =============================== */
-
 .main-text {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--hover-color);
+  color: var(--hover-color); /* Assuming --hover-color is defined elsewhere */
 }
 
 .main-text h2 {
@@ -437,39 +447,108 @@ section {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  grid-gap: 2rem;
+  gap: 2rem; 
 }
 
 .section-services .service-box {
   flex: 1 1 18rem;
-  padding: 2rem 1rem 2rem;
+  padding: 2rem 1rem;
   text-align: center;
-  background: var(--secon-bg-color);
+  background: var(--secon-bg-color); 
   transition: transform 0.4s;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.service-btn {
-  width: auto;
-  justify-content: center;
-}
-
-.service-box:hover {
+.section-services .service-box:hover {
   transform: translateY(-0.7rem);
+  cursor: pointer;
+  border: 2px solid var(--hover-color); 
 }
 
-.service-icon, .bxl-wordpress {
-  border: 2px solid var(--hover-color);
+.service-icon {
+  border: 2px solid var(--hover-color); 
   padding: 2rem;
-  background: var(--bg-color);
+  background: var(--bg-color); 
   display: flex;
   align-items: center;
   font-size: 3rem;
   border-radius: 50%;
   position: relative;
-  color: var(--hover-color);
+  color: var(--hover-color); 
   box-shadow: var(--neon-box-shadow);
-  outline: 3px solid var(--bg-color);
+  outline: 3px solid var(--bg-color); 
+}
+
+.service-box h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.service-box p {
+  margin: 0.5rem 0 1.5rem 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #bdbdbd;
+  line-height: 1.6;
+}
+
+.main-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--hover-color); /* Assuming --hover-color is defined elsewhere */
+}
+
+.main-text h2 {
+  font-weight: 700;
+  font-size: var(--normal-font);
+}
+
+.main-text span {
+  color: #fdfdfd;
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem; /* Changed from grid-gap to gap for flex container */
+}
+
+.section-services .service-box {
+  flex: 1 1 18rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  background: var(--secon-bg-color); /* Assuming --secon-bg-color is defined elsewhere */
+  transition: transform 0.4s;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow for a subtle effect */
+}
+
+.section-services .service-box:hover {
+  transform: translateY(-0.7rem);
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.service-icon {
+  border: 2px solid var(--hover-color); /* Assuming --hover-color is defined elsewhere */
+  padding: 2rem;
+  background: var(--bg-color); /* Assuming --bg-color is defined elsewhere */
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 50%;
+  position: relative;
+  color: var(--hover-color); /* Assuming --hover-color is defined elsewhere */
+  box-shadow: var(--neon-box-shadow); /* Assuming --neon-box-shadow is defined elsewhere */
+  outline: 3px solid var(--bg-color); /* Assuming --bg-color is defined elsewhere */
 }
 
 .service-box h3 {
@@ -621,6 +700,8 @@ section {
 .points {
   transition: background-color 0.3s ease;
 }
+
+
 
 /* =========================== Portfolio section css =============================== */
 
