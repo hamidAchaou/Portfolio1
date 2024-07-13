@@ -785,6 +785,13 @@ footer a i {
   color: var(--secon-bg-color);
 }
 
+/* =========================== parallax =============================== */
+.scroll-scalle {
+  opacity: 0;
+  transform: scale(.9);
+  transition: all 2s;
+}
+
 /* =========================== keyframes =============================== */
 
 @keyframes morph {
@@ -862,8 +869,8 @@ footer a i {
 }
 
 /* ============ Break Points ================== */
-@media(max-wdth:991px) {
-    header,
+@media (max-width: 991px) {
+      header,
     header.sticky {
         padding: 15px 5%;
     }
@@ -886,24 +893,105 @@ footer a i {
         --neon-box-shadow: 0 0 .8rem #12f7ff;
         --h2-font: 3rem;
     }
-}
-
-@media(max-wdth:768px) {
-    #menu-icon{
-        display: block;
-        transition: all .4s ease;
+    .home-content {
+      margin-top: 5rem;
     }
-    .navlist{
+
+    .home-content h1 {
+      font-size: var(--normal-font);
+      font-weight: 700;
+    }
+    .social-icons {
+      margin-top: 2rem;
+    }
+}
+    
+@media (max-width: 768px) {
+      #menu-icon {
+        display: block;
+        transition: all 0.4s ease;
+      }
+
+      #menu-icon.bx-x{
+        transform: rotate(-180deg);
+      }
+
+      .navlist {
         display: flex;
         position: absolute;
-        top: 100%;
+        top: -1000px;
         left: 0;
         right: 0;
         flex-direction: column;
         background: var(--bg-color);
         text-align: left;
         padding: 0 5%;
-        transition: all .45s ease;
-        
-    }
+        transition: all 0.45s ease;
+      }
+
+      .navlist a {
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+      }
+
+      .navlist.open {
+        top: 100%;
+      }
+
+      .home {
+        grid-template-columns: 1fr;
+      }
+      .home-image {
+        margin-bottom: 5rem;
+      }
+
+      .liquid-shape {
+        width: 80%;
+        left: 10%;
+        top: 1%;
+      }
+
+      .about {
+        flex-direction: column-reverse;
+      }
+
+      .skill-main {
+        grid-template-columns: 1fr;
+      }
+
+      .fillter-buttons {
+        margin: 2.5rem 0;
+      }
+
+      footer p {
+        font-size: .9rem;
+      }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 80%;
+  }
+  footer p {
+    font-size: .6rem;
+  }
+  .fillter-buttons .btn {
+    font-size: .8rem;
+  }
+
+  .img-about img {
+    width: 420px;
+  }
+
+  .info-about1, .info-about2, .info-about3 {
+    /* display: none; */
+    /* width: 60px;
+    height: auto;
+    font-size: .0001rem; */
+  }
+
+  .img-about p {
+    font-size: 1rem;
+  }
 }
