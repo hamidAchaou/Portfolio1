@@ -58,8 +58,130 @@ circles.forEach(elem=>{
 })
 
 // ============= mix it up PORTFOLIO SECTION ============================
-var mixer = mixitup('.container');
+var mixer = mixitup('.container'); 
+//modal crards projects
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('projectModal');
+    var modalTitle = document.getElementById('modalTitle');
+    var modalImage = document.getElementById('modalImage');
+    var modalDescription = document.getElementById('modalDescription');
+    var closeBtn = document.getElementsByClassName('close')[0];
+    var projectLinks = document.querySelectorAll('.project-details');
+    projectLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        modalTitle.textContent = this.getAttribute('data-title');
+        modalImage.src = this.getAttribute('data-image');
+        modalDescription.textContent = this.getAttribute('data-description');
+        modal.style.display = 'block';
+      });
+    });
+    closeBtn.onclick = function() {
+      modal.style.display = 'none';
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    let projectsData;
+    const portfolioGallery = document.querySelector('.portfolio-gallery');
+    const filterButtons = document.querySelectorAll('.filter-buttons .btn');
+    const modal = document.getElementById('projectModal');
+    const closeBtn = modal.querySelector('.close');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalImage = document.getElementById('modalImage');
+    const modalDescription = document.getElementById('modalDescription');
+    // Fetch the projects data
+    fetch('assets/js/projects.json')
+        .then(response => response.json())
+        .then(data => {
+            projectsData = data.projects;
+            displayProjects('all');
+            setupEventListeners();
+            initScrollReveal();
+        })
+        .catch(error => console.error('Error loading projects:', error));
+    function displayProjects(category) {
+        portfolioGallery.innerHTML = '';
+        projectsData.forEach(project => {
+            if (category === 'all' || project.category === category) {
+                const projectElement = createProjectElement(project);
+                portfolioGallery.appendChild(projectElement);
+            }
+        });
+        // Re-initialize ScrollReveal for new elements
+        initScrollReveal();
+    }
+    function createProjectElement(project) {
+        const projectDiv = document.createElement('div');
+        projectDiv.className = `port-box mix ${project.category}`;
+        projectDiv.dataset.projectId = project.id;
+        projectDiv.innerHTML = `
+            <div class="port-image">
+                <img src="${project.image}" alt="${project.title}">
+            </div>
+            <div class="port-content">
+                <h3>${project.title}</h3>
+                <p>${project.description.substring(0, 100)}...</p>
+                <a href="#" class="project-details">
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        `;
+        return projectDiv;
+    }
 
+    function setupEventListeners() {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const category = this.dataset.filter;
+                displayProjects(category);
+            });
+        });
+
+        portfolioGallery.addEventListener('click', function(e) {
+            if (e.target.closest('.project-details')) {
+                e.preventDefault();
+                const projectId = e.target.closest('.port-box').dataset.projectId;
+                const project = projectsData.find(p => p.id === projectId);
+                if (project) {
+                    modalTitle.textContent = project.title;
+                    modalImage.src = project.image;
+                    modalImage.alt = project.title;
+                    modalDescription.textContent = project.description;
+                    modal.style.display = 'block';
+                }
+            }
+        });
+
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    }
+
+    function initScrollReveal() {
+        ScrollReveal().reveal('.port-box', { 
+            origin: 'left',
+            distance: '50px',
+            duration: 1500,
+            delay: 300,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            interval: 200,
+            opacity: 0,
+            scale: 0.7,
+            cleanup: true
+        });
+    }
+});
 
 // =============  active menue ===============================
 let menuLi = document.querySelectorAll('header  ul li a');
@@ -118,6 +240,7 @@ window.onscroll = () =>{
 
 // scrollreveal
 // ScrollReveal animations
+
 ScrollReveal({
     reset: true,
     distance: '80px',
@@ -130,6 +253,111 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-ScrollReveal().reveal('.skill-left, .skill-right', { origin: 'bottom', interval: 200 });
+// ScrollReveal().reveal('.skill-left, .skill-right', { origin: 'bottom', interval: 200 });
+// ScrollReveal().reveal('.img-about, .aboute-content', { origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.service-box', { origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.port-box', { origin: 'bottom', interval: 200 });
+
+// skills 
+// Reveal main text
+ScrollReveal().reveal('.skills .main-text', {
+    origin: 'top',
+    distance: '20px',
+    duration: 1000,
+    delay: 200
+});
+
+// Reveal skill bars
+ScrollReveal().reveal('.skill-left .skill-bar', {
+    origin: 'left',
+    distance: '50px',
+    duration: 1000,
+    interval: 200
+});
+
+// Animate skill bar progress
+ScrollReveal().reveal('.skill-left .skill-bar .bar span', {
+    origin: 'left',
+    distance: '100%',
+    duration: 1500,
+    interval: 200,
+    afterReveal: (el) => {
+        el.style.transform = 'translateX(0)';
+    }
+});
+
+// Reveal professional skills boxes
+ScrollReveal().reveal('.skill-right .box', {
+    origin: 'right',
+    distance: '50px',
+    duration: 1000,
+    interval: 200
+});
+
+// Animate circle progress
+ScrollReveal().reveal('.skill-right .circle', {
+    origin: 'bottom',
+    distance: '20px',
+    duration: 1500,
+    interval: 200,
+    afterReveal: (el) => {
+        // Trigger the circle animation here
+        let dots = el.getAttribute("data-dots");
+        let marked = el.getAttribute("data-percent");
+        let percent = Math.floor(dots * marked / 100);
+        let points = "";
+        let rotate = 360 / dots;
+        
+        for(let i = 0; i < dots; i++) {
+            points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+        }
+        el.innerHTML = points;
+
+        const pointsMarked = el.querySelectorAll('.points');
+        setTimeout(() => {
+            for(let i = 0; i < percent; i++) {
+                pointsMarked[i].classList.add('marked');
+            }
+        }, 100);
+    }
+});
+
+// aboute
+// Reveal the image
+ScrollReveal().reveal('.img-about', {
+    origin: 'left',
+    distance: '50px',
+    duration: 1000,
+    delay: 200,
+    easing: 'ease-in-out'
+});
+
+// Reveal the info boxes with a stagger effect
+ScrollReveal().reveal('.img-about .info-about1, .img-about .info-about2, .img-about .info-about3', {
+    origin: 'bottom',
+    distance: '30px',
+    duration: 800,
+    interval: 200,
+    opacity: 0,
+    scale: 0.8,
+    easing: 'ease-out'
+});
+
+// Reveal the about content
+ScrollReveal().reveal('.about-content', {
+    origin: 'right',
+    distance: '50px',
+    duration: 1000,
+    delay: 400,
+    easing: 'ease-in-out'
+});
+
+// Reveal the text elements within about content
+ScrollReveal().reveal('.about-content span, .about-content h2, .about-content p', {
+    origin: 'bottom',
+    distance: '20px',
+    duration: 800,
+    interval: 200,
+    opacity: 0,
+    easing: 'ease-out'
+});
