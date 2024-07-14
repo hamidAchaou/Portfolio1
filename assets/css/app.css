@@ -172,6 +172,10 @@ section {
   line-height: 1.6;
 }
 
+.my-info {
+  display: flex;
+  justify-content: space-between;
+}
 .info-box {
   display: inline-flex;
   justify-content: space-between;
@@ -323,6 +327,12 @@ section {
   color: var(--hover-color);
   box-shadow: var(--neon-box-shadow); 
   outline: 3px solid var(--bg-color);
+  transition: .7s;
+}
+
+
+.img-box img:hover {
+  transform: scale(1.05);
 }
 
 .liquid-shape {

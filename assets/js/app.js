@@ -361,3 +361,13 @@ ScrollReveal().reveal('.about-content span, .about-content h2, .about-content p'
     opacity: 0,
     easing: 'ease-out'
 });
+
+// =========== download cv ==========================
+document.getElementById('download-cv').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = './assets/cv/cv-fr.pdf';
+    link.download = 'Hamid_AChaou_CV.pdf';  // The name the file will be saved as
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
