@@ -254,7 +254,7 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // ScrollReveal().reveal('.skill-left, .skill-right', { origin: 'bottom', interval: 200 });
-// ScrollReveal().reveal('.img-about, .aboute-content', { origin: 'bottom', interval: 200 });
+// ScrollReveal().reveal('.img-about, .about-content', { origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.service-box', { origin: 'bottom', interval: 200 });
 ScrollReveal().reveal('.port-box', { origin: 'bottom', interval: 200 });
 
