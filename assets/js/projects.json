@@ -1,46 +1,52 @@
 {
-    "projects": [
+  "projects": [
       {
-        "id": "gestion-personnels",
-        "title": "Gestion personnels",
-        "image": "assets/images/gestion-personnels2.jpg",
-        "description": "Le projet de gestion du personnel a été initié sous la supervision du directeur général de l'école. Divisé en quatre parties, gestion personnels et gestion prise de services et gestion des absences et conges et enfin gestion des Order Des Missions, ce projet consiste à créer un site internet regroupant chacune de ces composantes. Son objectif principal est d'améliorer la gestion des quatre principaux aspects de la gestion des ressources humaines et de fournir des statistiques pertinentes pour orienter les décisions stratégiques de l'organisation.",
-        "category": "laravel"
+          "id": "gestion-personnels",
+          "title": "Gestion personnels",
+          "image": "assets/images/gestion-personnels2.jpg",
+          "description": "Le projet de gestion du personnel a été initié sous la supervision du directeur général de l'école. Divisé en quatre parties, gestion personnels et gestion prise de services et gestion des absences et conges et enfin gestion des Order Des Missions, ce projet consiste à créer un site internet regroupant chacune de ces composantes. Son objectif principal est d'améliorer la gestion des quatre principaux aspects de la gestion des ressources humaines et de fournir des statistiques pertinentes pour orienter les décisions stratégiques de l'organisation.",
+          "category": "laravel",
+          "technologies": ["PHP", "Laravel", "MySQL", "HTML", "CSS", "JavaScript"]
       },
       {
-        "id": "graphic-design-1",
-        "title": "Graphic Design 1",
-        "image": "assets/images/2.jpg",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-        "category": "react"
+          "id": "graphic-design-1",
+          "title": "Graphic Design 1",
+          "image": "assets/images/2.jpg",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+          "category": "react",
+          "technologies": ["React", "Redux", "CSS", "HTML"]
       },
       {
-        "id": "graphic-design-2",
-        "title": "Graphic Design 2",
-        "image": "assets/images/3.jpg",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-        "category": "inter"
+          "id": "graphic-design-2",
+          "title": "Graphic Design 2",
+          "image": "assets/images/3.jpg",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+          "category": "inter",
+          "technologies": ["Adobe Photoshop", "Illustrator"]
       },
       {
-        "id": "graphic-design-3",
-        "title": "Graphic Design 3",
-        "image": "assets/images/4.jpg",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-        "category": "inter"
+          "id": "graphic-design-3",
+          "title": "Graphic Design 3",
+          "image": "assets/images/4.jpg",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+          "category": "inter",
+          "technologies": ["Adobe Photoshop", "Illustrator"]
       },
       {
-        "id": "graphic-design-4",
-        "title": "Graphic Design 4",
-        "image": "assets/images/5.jpg",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-        "category": "inter"
+          "id": "graphic-design-4",
+          "title": "Graphic Design 4",
+          "image": "assets/images/5.jpg",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+          "category": "inter",
+          "technologies": ["Adobe Photoshop", "Illustrator"]
       },
       {
-        "id": "graphic-design-5",
-        "title": "Graphic Design 5",
-        "image": "assets/images/6.jpg",
-        "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-        "category": "web"
+          "id": "graphic-design-5",
+          "title": "Graphic Design 5",
+          "image": "assets/images/6.jpg",
+          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+          "category": "web",
+          "technologies": ["HTML", "CSS", "JavaScript"]
       }
-    ]
-  }
+  ]
+}
