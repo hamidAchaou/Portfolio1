@@ -295,32 +295,32 @@ ScrollReveal().reveal('.skill-right .box', {
 });
 
 // Animate circle progress
-ScrollReveal().reveal('.skill-right .circle', {
-    origin: 'bottom',
-    distance: '20px',
-    duration: 1500,
-    interval: 200,
-    afterReveal: (el) => {
-        // Trigger the circle animation here
-        let dots = el.getAttribute("data-dots");
-        let marked = el.getAttribute("data-percent");
-        let percent = Math.floor(dots * marked / 100);
-        let points = "";
-        let rotate = 360 / dots;
+// ScrollReveal().reveal('.skill-right .circle', {
+//     origin: 'bottom',
+//     distance: '20px',
+//     duration: 1500,
+//     interval: 200,
+//     afterReveal: (el) => {
+//         // Trigger the circle animation here
+//         let dots = el.getAttribute("data-dots");
+//         let marked = el.getAttribute("data-percent");
+//         let percent = Math.floor(dots * marked / 100);
+//         let points = "";
+//         let rotate = 360 / dots;
         
-        for(let i = 0; i < dots; i++) {
-            points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
-        }
-        el.innerHTML = points;
+//         for(let i = 0; i < dots; i++) {
+//             points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+//         }
+//         el.innerHTML = points;
 
-        const pointsMarked = el.querySelectorAll('.points');
-        setTimeout(() => {
-            for(let i = 0; i < percent; i++) {
-                pointsMarked[i].classList.add('marked');
-            }
-        }, 100);
-    }
-});
+//         const pointsMarked = el.querySelectorAll('.points');
+//         setTimeout(() => {
+//             for(let i = 0; i < percent; i++) {
+//                 pointsMarked[i].classList.add('marked');
+//             }
+//         }, 100);
+//     }
+// });
 
 // aboute
 // Reveal the image

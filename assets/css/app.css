@@ -993,24 +993,7 @@ footer a i {
   color: var(--secon-bg-color);
 }
 
-/* =========================== parallax =============================== */
-/* .scroll-scalle {
-  opacity: 0;
-  transform: scale(.9);
-  transition: all 2s;
-}
-
-.scroll-bottom {
-  opacity: 0;
-  transform: translateY(300px);
-  transition: 3s;
-}
-
-.show-items {
-  opacity: 1;
-  transform: translateX(0);
-} */
-
+/* parallax */
 /* =========================== keyframes =============================== */
 
 @keyframes morph {
