@@ -314,18 +314,17 @@ section {
 
 .img-box img {
   width: 100%;
-  max-width: 480px;
+  max-width: 380px;
   height: auto;
-  
   margin-left: 3%;
-  border: 2px solid var(--hover-color); 
-  background: var(--bg-color); 
+  border: 2px solid var(--hover-color);
+  background: var(--bg-color);
   display: flex;
   align-items: center;
   border-radius: 50%;
   position: relative;
   color: var(--hover-color);
-  box-shadow: var(--neon-box-shadow); 
+  box-shadow: var(--neon-box-shadow);
   outline: 3px solid var(--bg-color);
   transition: .7s;
 }
