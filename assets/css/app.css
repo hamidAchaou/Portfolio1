@@ -1185,14 +1185,19 @@ footer a i {
     width: 420px;
   }
 
-  .info-about1, .info-about2, .info-about3 {
-    /* display: none; */
-    /* width: 60px;
-    height: auto;
-    font-size: .0001rem; */
+  .my-info {
+    display: block;
   }
-
   .img-about p {
     font-size: 1rem;
   }
+
+  .btn-box {
+    margin-top: 1.5rem;
+}
+
+.info-box {
+  margin-top: 1rem;
+}
+
 }
