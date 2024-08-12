@@ -7,8 +7,9 @@
         "description": "Le projet de gestion du personnel a été initié sous la supervision du directeur général de l'école. Divisé en quatre parties, gestion personnels et gestion prise de services et gestion des absences et conges et enfin gestion des Order Des Missions, ce projet consiste à créer un site internet regroupant chacune de ces composantes. Son objectif principal est d'améliorer la gestion des quatre principaux aspects de la gestion des ressources humaines et de fournir des statistiques pertinentes pour orienter les décisions stratégiques de l'organisation.",
         "category": "laravel",
         "technologies": ["PHP", "Laravel", "MySQL", "HTML", "CSS", "JavaScript"],
-        "github": "https://github.com/yourusername/gestion-personnels",
-        "liveDemo": "https://gestion-personnels-demo.com"
+        "github": "https://github.com/hamidAchaou/gestion-personnels.git",
+        "Rapport": "https://solicoders.github.io/gestion-personnels/pkg_Conges/rapport",
+        "liveDemo": "https://solicoders.github.io/gestion-personnels/pkg_Conges/rapport"
       },
       {
           "id": "graphic-design-1",
