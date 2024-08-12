@@ -816,7 +816,6 @@ section {
   font-size: 1.3rem;
   color: var(--secon-bg-color);
 }
-
 .modal {
   display: none;
   position: fixed;
@@ -825,62 +824,28 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  overflow-y: auto; /* Allows scrolling if the content exceeds the viewport height */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-body {
+  display: flex;
+  gap: 2%;
 }
 
 .modal-content {
   background-color: var(--bg-color);
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
-  border: 1px solid var(--hover-color);
-  width: 80%;
-  max-width: 600px;
-  border-radius: 5px;
-}
-
-.close {
-  color: var(--hover-color);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: var(--main-color);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-content img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-/* modal css */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8);
-}
-
-.modal-content {
-  background-color: var(--bg-color);
-  margin: 10% auto;
-  padding: 25px;
   border: 2px solid var(--hover-color);
-  width: 80%;
-  max-width: 700px;
+  width: 90%;
+  max-width: 82%;
   border-radius: 10px;
   box-shadow: var(--neon-box-shadow);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Aligns the image and content at the top */
+  gap: 20px; /* Adds space between the image and the content */
 }
 
 .close {
@@ -898,30 +863,106 @@ section {
   cursor: pointer;
 }
 
-.modal-content h2 {
-  color: var(--hover-color);
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+.modal-image {
+  flex: 2; 
+  max-width: 48%; 
 }
 
-.modal-content img {
+.modal-image img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid var(--hover-color);
 }
 
-.modal-content p {
+.modal-details {
+  flex: 2;
   color: var(--text-color);
-  font-size: 1rem;
-  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .modal-content {
-    width: 90%;
-    margin: 20% auto;
+.modal-details h2 {
+  color: var(--hover-color);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#modalTechnologies {
+  margin-bottom: 15px;
+}
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+#modalLinks {
+  margin-top: 20px;
+  float: inline-end;
+}
+
+.btn-link {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-link i {
+  margin-right: 8px;
+}
+
+.github-link {
+  background: #24292e;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  background: #3a3a3a;
+}
+
+.demo-link {
+  background: var(--hover-color);
+  color: var(--bg-color);
+  border: 1px solid var(--hover-color);
+  transition: all 0.3s ease;
+}
+
+.demo-link:hover {
+  color: var(--hover-color);
+  background: var(--bg-color);
+  border: 1px solid var(--hover-color);
+}
+
+@media (max-width: 600px) {
+  #modalLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-link {
+    margin: 10px 0 0 0;
   }
 }
 

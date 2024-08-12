@@ -144,18 +144,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
         portfolioGallery.addEventListener('click', function(e) {
             if (e.target.closest('.project-details')) {
-                e.preventDefault();
-                const projectId = e.target.closest('.port-box').dataset.projectId;
-                const project = projectsData.find(p => p.id === projectId);
-                if (project) {
-                    modalTitle.textContent = project.title;
-                    modalImage.src = project.image;
-                    modalImage.alt = project.title;
-                    modalDescription.textContent = project.description;
-                    modal.style.display = 'block';
+              e.preventDefault();
+              const projectId = e.target.closest('.port-box').dataset.projectId;
+              const project = projectsData.find(p => p.id === projectId);
+              if (project) {
+                modalTitle.textContent = project.title;
+                modalImage.src = project.image;
+                modalImage.alt = project.title;
+                modalDescription.textContent = project.description;
+                
+                // Display technologies
+                modalTechnologies.innerHTML = project.technologies.map(tech => 
+                  `<span class="tech-tag">${tech}</span>`
+                ).join('');
+                
+                // Set up links (if available)
+                if (project.github) {
+                  modalGithub.href = project.github;
+                  modalGithub.style.display = 'inline-block';
+                } else {
+                  modalGithub.style.display = 'none';
                 }
+                
+                if (project.liveDemo) {
+                  modalLive.href = project.liveDemo;
+                  modalLive.style.display = 'inline-block';
+                } else {
+                  modalLive.style.display = 'none';
+                }
+                
+                modal.style.display = 'block';
+              }
             }
-        });
+          });
 
         closeBtn.onclick = function() {
             modal.style.display = 'none';

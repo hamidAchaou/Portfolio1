@@ -21,6 +21,11 @@
     />
     <!-- scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -309,10 +314,27 @@
       <div id="projectModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h2 id="modalTitle"></h2>
-          <img id="modalImage" src="" alt="" />
-          <p id="modalDescription"></p>
+          <div class="modal-body">
+            <div class="modal-image">
+              <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-details">
+              <h2 id="modalTitle"></h2>
+              <p id="modalDescription"></p>
+              <div id="modalTechnologies"></div>
+              <div id="modalLinks">
+                <a id="modalGithub" href="" target="_blank" class="btn-link github-link">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a id="modalLive" href="" target="_blank" class="btn-link demo-link">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      
       </div>
     </section>
     <!-- ===================== contact dection ==================== -->
