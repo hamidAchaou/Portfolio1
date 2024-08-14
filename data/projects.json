@@ -1,65 +1,90 @@
 {
-  "projects": [
-    {
-        "id": "gestion-personnels",
-        "title": "Gestion personnels",
-        "image": "assets/images/gestion-personnels2.jpg",
-        "description": "Le projet de gestion du personnel a été initié sous la supervision du directeur général de l'école. Divisé en quatre parties, gestion personnels et gestion prise de services et gestion des absences et conges et enfin gestion des Order Des Missions, ce projet consiste à créer un site internet regroupant chacune de ces composantes. Son objectif principal est d'améliorer la gestion des quatre principaux aspects de la gestion des ressources humaines et de fournir des statistiques pertinentes pour orienter les décisions stratégiques de l'organisation.",
-        "category": "laravel",
-        "technologies": ["PHP", "Laravel", "MySQL", "HTML", "CSS", "JavaScript"],
-        "github": "https://github.com/hamidAchaou/gestion-personnels.git",
-        "Rapport": "https://solicoders.github.io/gestion-personnels/pkg_Conges/rapport",
-        "liveDemo": "https://solicoders.github.io/gestion-personnels/pkg_Conges/rapport"
-      },
-      {
-          "id": "graphic-design-1",
-          "title": "Graphic Design 1",
-          "image": "assets/images/2.jpg",
-          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-          "category": "react",
-          "technologies": ["React", "Redux", "CSS", "HTML"],
-          "github": "https://github.com/yourusername/gestion-personnels",
-          "liveDemo": "https://gestion-personnels-demo.com"
-      },
-      {
-          "id": "graphic-design-2",
-          "title": "Graphic Design 2",
-          "image": "assets/images/3.jpg",
-          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-          "category": "inter",
-          "technologies": ["Adobe Photoshop", "Illustrator"],
-          "github": "https://github.com/yourusername/gestion-personnels",
-          "liveDemo": "https://gestion-personnels-demo.com"
-      },
-      {
-          "id": "graphic-design-3",
-          "title": "Graphic Design 3",
-          "image": "assets/images/4.jpg",
-          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-          "category": "inter",
-          "technologies": ["Adobe Photoshop", "Illustrator"],
-          "github": "https://github.com/yourusername/gestion-personnels",
-          "liveDemo": "https://gestion-personnels-demo.com"
-      },
-      {
-          "id": "graphic-design-4",
-          "title": "Graphic Design 4",
-          "image": "assets/images/5.jpg",
-          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-          "category": "inter",
-          "technologies": ["Adobe Photoshop", "Illustrator"],
-          "github": "https://github.com/yourusername/gestion-personnels",
-          "liveDemo": "https://gestion-personnels-demo.com"
-      },
-      {
-          "id": "graphic-design-5",
-          "title": "Graphic Design 5",
-          "image": "assets/images/6.jpg",
-          "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-          "category": "web",
-          "technologies": ["HTML", "CSS", "JavaScript"],
-          "github": "https://github.com/yourusername/gestion-personnels",
-          "liveDemo": "https://gestion-personnels-demo.com"
-      }
-  ]
+    "projects": [
+        {
+            "id": "personnel-management",
+            "title": "Personnel Management",
+            "image": "assets/images/gestion-personnels2.jpg",
+            "description": "The personnel management project was initiated under the supervision of the school's general director. Divided into four parts: personnel management, service management, absence and leave management, and finally, mission order management, this project aims to create a website that integrates each of these components. Its main objective is to improve the management of the four key aspects of human resource management and provide relevant statistics to guide the organization's strategic decisions.",
+            "category": "laravel",
+            "technologies": [
+                "PHP",
+                "Laravel",
+                "MySQL",
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "github": "https://github.com/hamidAchaou/gestion-personnels.git",
+            "report": "https://solicoders.github.io/gestion-personnels/pkg_Conges/rapport",
+            "liveDemo": "https://solicoders.github.io/gestion-personnels/pkg_Conges/rapport"
+        },
+        {
+            "id": "graphic-design-1",
+            "title": "Graphic Design 1",
+            "image": "assets/images/2.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+            "category": "react",
+            "technologies": [
+                "React",
+                "Redux",
+                "CSS",
+                "HTML"
+            ],
+            "github": "https://github.com/yourusername/gestion-personnels",
+            "liveDemo": "https://gestion-personnels-demo.com"
+        },
+        {
+            "id": "graphic-design-2",
+            "title": "Graphic Design 2",
+            "image": "assets/images/3.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+            "category": "inter",
+            "technologies": [
+                "Adobe Photoshop",
+                "Illustrator"
+            ],
+            "github": "https://github.com/yourusername/gestion-personnels",
+            "liveDemo": "https://gestion-personnels-demo.com"
+        },
+        {
+            "id": "graphic-design-3",
+            "title": "Graphic Design 3",
+            "image": "assets/images/4.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+            "category": "inter",
+            "technologies": [
+                "Adobe Photoshop",
+                "Illustrator"
+            ],
+            "github": "https://github.com/yourusername/gestion-personnels",
+            "liveDemo": "https://gestion-personnels-demo.com"
+        },
+        {
+            "id": "graphic-design-4",
+            "title": "Graphic Design 4",
+            "image": "assets/images/5.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+            "category": "inter",
+            "technologies": [
+                "Adobe Photoshop",
+                "Illustrator"
+            ],
+            "github": "https://github.com/yourusername/gestion-personnels",
+            "liveDemo": "https://gestion-personnels-demo.com"
+        },
+        {
+            "id": "graphic-design-5",
+            "title": "Graphic Design 5",
+            "image": "assets/images/6.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+            "category": "web",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "github": "https://github.com/yourusername/gestion-personnels",
+            "liveDemo": "https://gestion-personnels-demo.com"
+        }
+    ]
 }
