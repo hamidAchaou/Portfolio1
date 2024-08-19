@@ -16,7 +16,7 @@
             ],
             "github": "https://github.com/hamidAchaou/gestion-personnels.git",
             "report": "https://solicoders.github.io/gestion-personnels/pkg_Conges/rapport",
-            "liveDemo": "https://solicoders.github.io/gestion-personnels/pkg_Conges/rapport"
+            "liveDemo": "#"
         },
         {
             "id": "graphic-design-1",
@@ -31,6 +31,7 @@
                 "HTML"
             ],
             "github": "https://github.com/yourusername/gestion-personnels",
+            "rapport": "",
             "liveDemo": "https://gestion-personnels-demo.com"
         },
         {
@@ -44,6 +45,7 @@
                 "Illustrator"
             ],
             "github": "https://github.com/yourusername/gestion-personnels",
+            "rapport": "",
             "liveDemo": "https://gestion-personnels-demo.com"
         },
         {
@@ -57,6 +59,7 @@
                 "Illustrator"
             ],
             "github": "https://github.com/yourusername/gestion-personnels",
+            "rapport": "",
             "liveDemo": "https://gestion-personnels-demo.com"
         },
         {
@@ -70,6 +73,7 @@
                 "Illustrator"
             ],
             "github": "https://github.com/yourusername/gestion-personnels",
+            "rapport": "",
             "liveDemo": "https://gestion-personnels-demo.com"
         },
         {
@@ -84,6 +88,7 @@
                 "JavaScript"
             ],
             "github": "https://github.com/yourusername/gestion-personnels",
+            "rapport": "",
             "liveDemo": "https://gestion-personnels-demo.com"
         }
     ]

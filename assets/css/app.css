@@ -915,6 +915,16 @@ section {
   color: #333;
 }
 
+.report-link {
+  background: #4a4a4a;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.report-link:hover {
+  background: #5a5a5a;
+}
+
 #modalLinks {
   margin-top: 20px;
   float: inline-end;
