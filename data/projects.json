@@ -19,77 +19,22 @@
             "liveDemo": "#"
         },
         {
-            "id": "graphic-design-1",
-            "title": "Graphic Design 1",
-            "image": "assets/images/2.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-            "category": "react",
-            "technologies": [
-                "React",
-                "Redux",
-                "CSS",
-                "HTML"
-            ],
-            "github": "https://github.com/yourusername/gestion-personnels",
-            "rapport": "",
-            "liveDemo": "https://gestion-personnels-demo.com"
-        },
-        {
-            "id": "graphic-design-2",
-            "title": "Graphic Design 2",
+            "id": "real-estate-management",
+            "title": "Real Estate Management",
             "image": "assets/images/3.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-            "category": "inter",
-            "technologies": [
-                "Adobe Photoshop",
-                "Illustrator"
-            ],
-            "github": "https://github.com/yourusername/gestion-personnels",
-            "rapport": "",
-            "liveDemo": "https://gestion-personnels-demo.com"
-        },
-        {
-            "id": "graphic-design-3",
-            "title": "Graphic Design 3",
-            "image": "assets/images/4.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-            "category": "inter",
-            "technologies": [
-                "Adobe Photoshop",
-                "Illustrator"
-            ],
-            "github": "https://github.com/yourusername/gestion-personnels",
-            "rapport": "",
-            "liveDemo": "https://gestion-personnels-demo.com"
-        },
-        {
-            "id": "graphic-design-4",
-            "title": "Graphic Design 4",
-            "image": "assets/images/5.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
-            "category": "inter",
-            "technologies": [
-                "Adobe Photoshop",
-                "Illustrator"
-            ],
-            "github": "https://github.com/yourusername/gestion-personnels",
-            "rapport": "",
-            "liveDemo": "https://gestion-personnels-demo.com"
-        },
-        {
-            "id": "graphic-design-5",
-            "title": "Graphic Design 5",
-            "image": "assets/images/6.jpg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed illum earum dignissimos, libero enim porro at sequi, iste praesentium quasi autem officiis. Provident minima repellendus quis officia rerum ducimus.",
+            "description": "This project involves creating a web application to assist in managing and storing sales or rental listings for a real estate agency. The main goal is to provide a structured, persistent, and centralized storage of data using databases, facilitating quick and optimized access to information. The application will include features like listing, editing, deleting, adding new listings, and searching based on type and price range.",
             "category": "web",
             "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript"
+                "HTML5",
+                "PHP",
+                "MySQL",
+                "JavaScript",
+                "CSS3",
+                "Git"
             ],
-            "github": "https://github.com/yourusername/gestion-personnels",
-            "rapport": "",
-            "liveDemo": "https://gestion-personnels-demo.com"
+            "github": "https://github.com/yourusername/real-estate-management",
+            "report": "Link to Figma for design validation and GitHub for source code.",
+            "liveDemo": "#"
         }
     ]
 }
