@@ -636,6 +636,18 @@ section {
   width: 85%;
   animation: figma 4s;
 }
+.skill-bar .bar .symfony {
+  width: 80%;
+  animation: symfony 2.5s;
+}
+@keyframes symfony {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
 
 .skill-bar .bar .javascript {
   width: 80%;
